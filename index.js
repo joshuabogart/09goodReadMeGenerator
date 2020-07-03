@@ -70,30 +70,31 @@ function promptUser() {
 
 function generateMD(answers) {
   return `
+<img src="https://img.shields.io/npm/l/npm">
+
 # ${answers.title}
-    ${answers.description}
-    ## Table of contents:
-        * Installation
-        * Usage
-        * License
-        * Contributors
-        * Tests
-        * Picture
-        * Email
-    ## Instalation
-        ${answers.installation}
-    ## Usage
-        ${answers.usage}
-    ## License
-        ${answers.license}
-    ## Contributors
-        ${answers.contributors}
-    ## Tests
-        ${answers.test}
-        <img src="${answers.profilePicture}">
-    ### ${answers.gitHubEmail}
-  ;
-  `
+${answers.description}
+## Table of contents:
+* Installation
+* Usage
+* License
+* Contributors
+* Tests
+* Picture
+* Email
+## Instalation
+${answers.installation}
+## Usage
+${answers.usage}
+## License
+${answers.license}
+## Contributors
+${answers.contributors}
+## Tests
+${answers.test}
+<img src="${answers.profilePicture}">
+${answers.gitHubEmail}
+`
 };
 
 promptUser()
